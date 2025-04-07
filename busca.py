@@ -16,7 +16,7 @@ st.markdown("""
             color: #999;
         }
         .dork-box {
-            background-color: #d3d3d3;
+            background-color: #111827;
             color: #fff;
             padding: 0.5em 1em;
             border-radius: 10px;
