@@ -38,7 +38,7 @@ st.markdown("---")
 
 perfil = st.selectbox("🧠 Escolha o tipo de OSINT:", ["Pessoas", "Empresas", "Documentos", "Repositórios", "Vazamentos"])
 
-info = st.text_input("&#127919;🎯 Qual a informação que você quer caçar?", placeholder="Ex: João da Silva, CPF, domínio, etc...")
+info = st.text_input("#127919;🎯 Qual a informação que você quer caçar?", placeholder="Ex: João da Silva, CPF, domínio, etc...")
 
 # Função para gerar dorks potentes
 def gerar_dorks(info):
