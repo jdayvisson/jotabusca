@@ -43,12 +43,23 @@ def gerar_dorks(info):
     alvos = [
         "site:linkedin.com/in", "site:facebook.com", "site:instagram.com", "site:twitter.com",
         "site:tiktok.com", "site:youtube.com", "site:github.com", "site:gitlab.com",
-        "site:pastebin.com", "site:medium.com", "site:trello.com", "site:slideshare.net",
-        "site:spotify.com", "site:deezer.com", "site:imgur.com", "site:jusbrasil.com.br",
-        "site:gov.br", "site:diariodonordeste.verdesmares.com.br", "site:reclameaqui.com.br",
+        "site:bitbucket.org", "site:pastebin.com", "site:hastebin.com", "site:controlc.com",
+        "site:0bin.net", "site:termbin.com", "site:ghostbin.com", "site:justpaste.it",
+        "site:medium.com", "site:trello.com", "site:slideshare.net",
+        "site:spotify.com", "site:deezer.com", "site:imgur.com", "site:imgbb.com",
+        "site:jusbrasil.com.br", "site:gov.br", "site:*.gov.br", "site:*.edu.br",
+        "site:diariodonordeste.verdesmares.com.br", "site:reclameaqui.com.br",
         "site:archive.org", "site:blogspot.com", "site:wordpress.com", "site:weebly.com",
+        "site:wixsite.com", "site:strikingly.com", "site:webnode.com", "site:ucoz.com",
         "site:globo.com", "site:uol.com.br", "site:terra.com.br", "site:estadao.com.br",
-        "site:g1.globo.com", "site:olx.com.br", "site:mercadolivre.com.br", "site:zoom.com.br"
+        "site:g1.globo.com", "site:olx.com.br", "site:mercadolivre.com.br", "site:zoom.com.br",
+        "site:docs.google.com", "site:drive.google.com", "site:onedrive.live.com",
+        "site:dropbox.com", "site:box.com", "site:mega.nz", "site:icloud.com",
+        "site:we.tl", "site:sendspace.com", "site:zippyshare.com", "site:mediafire.com",
+        "site:scribd.com", "site:slides.com", "site:calameo.com", "site:issuu.com",
+        "site:shodan.io", "site:censys.io", "site:zoomeye.org",
+        "site:grayhatwarfare.com", "site:buckets.grayhatwarfare.com",
+        "site:openbugbounty.org", "site:exploit-db.com", "site:packetstormsecurity.com"
     ]
 
     operadores = [
@@ -61,7 +72,24 @@ def gerar_dorks(info):
         f'"{info}" filetype:doc',
         f'"{info}" filetype:txt',
         f'"{info}" filetype:csv',
-        f'"{info}" filetype:log'
+        f'"{info}" filetype:log',
+        f'url:"{info}"',
+        f'host:"{info}"',
+        f'"{info}" mime:application/pdf',
+        f'"{info}" mime:application/vnd.ms-excel',
+        f'"{info}" mime:application/msword',
+        f'"{info}" mime:text/plain',
+        f'"{info}" mime:text/csv',
+        f'"{info}" mime:text/x-log',
+        f'hostname:"{info}"',
+        f'org:"{info}"',
+        f'product:"{info}"',
+        f'city:"{info}"',
+        f'country:"{info}"',
+        f'os:"{info}"',
+        f'"{info}" port:21',
+        f'"{info}" port:80',
+        f'"{info}" port:443'
     ]
 
     dorks = []
