@@ -1,1 +1,1 @@
-JotaBusca - Aplicação para auxiliar na busca de informações linux!
+JotaBusca - Ferramenta OSINT para auxiliar na busca de informações na rede!
