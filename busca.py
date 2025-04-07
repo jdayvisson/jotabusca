@@ -33,7 +33,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="big-title">🔥 JOTA BUSCA 🔍</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtext">Bora fuçar a internet inteira.</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtext"> Bora fuçar a internet inteira.</div>', unsafe_allow_html=True)
 st.markdown("---")
 
 info = st.text_input("🎯 Qual a informação que você quer caçar?", placeholder="Ex: João da Silva, CPF, domínio, etc...")
