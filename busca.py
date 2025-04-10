@@ -3,7 +3,7 @@ import urllib.parse
 
 st.set_page_config(page_title="JOTA BUSCA", layout="wide")
 
-# CSS estilo dark brabo
+# --> PARTE DO CSS <--
 st.markdown("""
     <style>
         .big-title {
@@ -40,7 +40,7 @@ perfil = st.selectbox("🧠 Escolha o tipo de OSINT:", ["Pessoas", "Empresas", "
 
 info = st.text_input("🎯 Qual a informação que você quer caçar?", placeholder="Ex: João da Silva, CPF, domínio, etc...")
 
-# Função para gerar dorks potentes
+# --> GERA AS DORKS <--
 def gerar_dorks(info):
     perfis_alvos = {
         "Pessoas": [
@@ -103,7 +103,7 @@ def gerar_dorks(info):
     dorks = [f"{alvo} {op}" for alvo in alvos for op in operadores]
     return dorks
 
-# Motores e URLs
+# --> MOTORES <--
 motores = {
     "Google": "https://www.google.com/search?q=",
     "Bing": "https://www.bing.com/search?q=",
@@ -114,7 +114,7 @@ motores = {
     "Shodan": "https://www.shodan.io/search?query="
 }
 
-# Gerar URLs das buscas
+# --> GERA AS URLS <--
 def gerar_buscas(info, dorks):
     resultados = {}
     for motor, base_url in motores.items():
@@ -125,7 +125,7 @@ def gerar_buscas(info, dorks):
         resultados[motor] = urls
     return resultados
 
-# Botão principal
+# --> BOTÃO PRINCIPAL <--
 if st.button("🚀 GERAR AGORA"):
     if info.strip() == "":
         st.warning("⚠️ Digita alguma coisa primeiro, guerreiro!")
